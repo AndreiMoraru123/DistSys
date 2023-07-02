@@ -1,0 +1,49 @@
+
+<form action="http://localhost:8082">
+    <!DOCTYPE html>
+    <html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Log In</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="common.js"></script>
+        <script src="position.js"></script>
+        <script src="login.js"></script>
+
+        <style>
+            body {
+                background-color: whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+    <h1 align="center">Log In</h1>
+
+    <div id align="center">
+        <form id="form_id" method="post" name="myform">
+            <table align="center">
+                <tr>
+                    <td><b>Username</b></td>
+                    <td><input type="text" name="username" id="username"/></br></td>
+                </tr>
+                <tr>
+                    <td><b>Password</b></td>
+                    <td><input type="password" name="password" id="password"/></br></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td align="right"><input type="button" value="Login" id="submit" onclick="validate()"/></td>
+
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+
+    </body>
+    </html>
+</form>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Andrei</title>
+    <style>
+        #map {
+            width: 900px;
+            height: 400px;
+            align-content: center;
+        }
+    </style>
+    <script type="text/javascript" src="verifyLogin.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src ="position.js"></script>
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="common.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body bgcolor="#F5F5F5" onload="VerifyLocalStorageIfExistUser()">
+<h1 align="center" >Admin App</h1>
+<div id align="center">
+    <table align="center">
+        <tr>
+            <td><b>TerminalId</b></td>
+            <td><input type="text" id="deviceId" size="35"  value="1" class="regular_input"
+                       onkeydown="if (event.keyCode == 13) getPositions()"></td>
+        </tr>
+        <tr>
+            <td><b>Start Date</b></td>
+            <td><input type="text" id="startDate" size="35" value="2015-01-01 23:00:00"
+                       onkeydown="if (event.keyCode == 13) getPositions()"></td>
+        </tr>
+        <tr>
+            <td><b>End Date</b></td>
+            <td><input type="text" id="endDate" size="35" value="2019-01-25 23:00:00"
+                       onkeydown="if (event.keyCode == 13) getPositions()"></td>
+        </tr>
+        <tr>
+            <td><br></td>
+            <td><br></td>
+        </tr>
+        <tr align="center">
+            <td>                    </td>
+            <td align="center"><input type="button" align="center" id="get_positions_button" size="35"  value="Show on map"
+                                      onclick=getPositions()></td>
+        </tr>
+        <tr>
+            <td><br></td>
+            <td><br></td>
+        </tr>
+        <tr><div align="center" id="map"/></tr>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:layout_marginTop="40dp"
+            android:text="GPS Tracking"
+            android:textColor="@color/skyBlue"
+            android:textSize="52dp" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_id"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/blue"
+            android:hint="Insert your user name" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_id"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/blue"
+            android:hint="Insert your password" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90sp"
+            android:layout_marginTop="100sp"
+            android:layout_marginRight="90sp"
+            android:background="@color/skyBlue"
+            android:onClick="PlayButton"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</RelativeLayout>
